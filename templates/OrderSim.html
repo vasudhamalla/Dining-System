@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="{{ url_for('ContinueOrder') }}" method="post">
+        <select name = "cust_list">
+            {% for cust in cust_data %}
+                <option value="{{ cust.cust_ID }}">{{ cust.name }}</option>
+            {% endfor %}
+        </select>
+        <select name = "dining_list">
+            {% for dining in dining_data %}
+                <option value="{{ dining.dining_ID }}">{{ dining.name }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="Select Items from Menu">
+     </form>
+{% endblock %}
