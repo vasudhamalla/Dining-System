@@ -2,6 +2,7 @@
 Technologies used to design the system :
 -	MySQL
 -	Python -flask
+
 Steps to run the project:
 -	Create the database from the included scripts and begin the server
 -	Unzip the project file and navigate into code folder
